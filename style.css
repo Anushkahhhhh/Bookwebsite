@@ -9,8 +9,9 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+
 }
 
 .nav-list {
@@ -85,6 +86,25 @@ h1 {
 
 }
 
+.Lib {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 500px;
+  position: relative;
+  left: 20%;
+  top: 2%;
+  
+ 
+  }
+}
+@keyframes newanimation {
+  0% {left: 0;}
+  100% {left: 100px;}
+}
+
 :root {
   --hue: 220deg;
   --base-bg-sat: 20%;
@@ -117,7 +137,7 @@ div.notice {
   box-sizing: border-box;
   background-image: url(#icon-world);
   position: absolute;
-  top: 2%;
+  top: -118px;
   left: 30%;
 }
 
@@ -139,34 +159,53 @@ div.notice {
   }
 }
 
+.backimage {
+  position: absolute;
+  width: 90%;
+  height: 500px;
+  background-image: url('13-captivating-facts-about-beinecke-library-1695483441.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+   transition: translate 3s;
+
+}
+.backimage:active{
+  transform: rotate(50deg);
+}
+
 .scrol {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 500px;
-  background-image: url('1876.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
   position: relative;
-
+  top: 3%;
 }
 
-@media only screen and (max-width: 1350px){
+.library {
+  position: relative;
+  left: 20px;
+}
+
+@media only screen and (max-width: 1350px) {
   .world {
     left: 10%;
   }
+
   .headdiv {
     height: 600px;
     left: 2%;
   }
-  
+
   .booksforlovers {
     left: 2%;
 
   }
 }
-@media only screen and (max-width: 800px){
+
+@media only screen and (max-width: 800px) {
   .world {
     display: none;
   }
