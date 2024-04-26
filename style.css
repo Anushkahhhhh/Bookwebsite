@@ -24,6 +24,7 @@ body {
 }
 
 .nav-list li a {
+  font-size: 20px;
   color: #F0EBCE;
   text-decoration: none;
 }
@@ -61,7 +62,7 @@ body {
 
 #booksection {
   text-transform: uppercase;
-  top: -80px;
+  top: -100px;
   z-index: 3;
   position: relative;
   width: 100%;
@@ -83,7 +84,21 @@ h1 {
   color: #F0EBCE;
   position: relative;
   text-align: center;
-
+  
+}
+.library {
+  transition: transform 1s;
+  margin-bottom: 10px;
+}
+.library:hover {
+  transform: translate(-100px);
+}
+.library img {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.library img:hover {
+  transform: scale(1.1);
 }
 
 .Lib {
@@ -94,11 +109,10 @@ h1 {
   width: 50%;
   height: 500px;
   position: relative;
-  left: 20%;
-  top: 2%;
+  left: 36%;
+  top: 1%;
   
- 
-  }
+
 }
 @keyframes newanimation {
   0% {left: 0;}
@@ -161,12 +175,13 @@ div.notice {
 
 .backimage {
   position: absolute;
-  width: 90%;
+  width: 100%;
   height: 500px;
+  margin-left: 100px;
   background-image: url('13-captivating-facts-about-beinecke-library-1695483441.jpg');
   background-size: contain;
   background-repeat: no-repeat;
-   transition: translate 3s;
+   transition: background-image 0.5s ease-in-out;
 
 }
 .backimage:active{
@@ -178,10 +193,12 @@ div.notice {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 70%;
   height: 500px;
   position: relative;
   top: 3%;
+  left: 13%;
+  background-color: #AA8B56;
 }
 
 .library {
